@@ -1,16 +1,13 @@
-# chitbox_app
+# Chit Fund App 
+This repository provides a  you to start building a Chit Fund management application. A Chit Fund is a rotating savings scheme where members contribute a fixed amount regularly, and one member receives the entire pot at pre-defined intervals.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+  - User registration and login
+  - Chit creation with details (amount, duration, number of members)
+  - Member invitation and management
+  - Contribution recording and tracking
+  - Auction system for chit allocation (if applicable)
+  - Secure payment processing 
+  - Transaction history and reporting
+  - Rewarding   prize for chit winners
+  - distrubution of amount among participants
