@@ -1,7 +1,7 @@
 # Chit Fund App 
 This repository provides a  you to start building a Chit Fund management application. A Chit Fund is a rotating savings scheme where members contribute a fixed amount regularly, and one member receives the entire pot at pre-defined intervals.
 
-Features
+# Features
   - User registration and login
   - Chit creation with details (amount, duration, number of members)
   - Member invitation and management
