@@ -3,6 +3,12 @@
 ## Overview
 ChitBox is a digital platform designed to modernize the traditional chit fund process. Our goal is to provide users with a secure, transparent, and user-friendly experience for joining, managing, and participating in chit funds. This project focuses on creating an intuitive app that simplifies the complexities of chit funds, making them accessible and manageable for everyone.
 
+
+
+## Vision
+ChitBox aims to revolutionize the traditional chit fund industry by leveraging technology to offer a transparent, secure, and efficient platform for users. By focusing on user experience and security, we aspire to build trust and provide a reliable service for all chit fund participants.
+
+For any inquiries, feedback, or support, please reach out to our team at support@chitbox.in
 ## Features in Phase One
 The initial phase of the ChitBox app includes the following key features:
 
@@ -42,7 +48,12 @@ ChitBox prioritizes the security and privacy of user data through the following 
 - **Regular Audits:** Conducting periodic security audits and compliance checks.
 - **User Consent:** Ensuring user consent for data collection and usage in compliance with privacy regulations.
 
-## Vision
-ChitBox aims to revolutionize the traditional chit fund industry by leveraging technology to offer a transparent, secure, and efficient platform for users. By focusing on user experience and security, we aspire to build trust and provide a reliable service for all chit fund participants.
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
-For any inquiries, feedback, or support, please reach out to our team at support@chitbox.in
+
+## Screenshots
+
+![SplashScreen](https:/www.google.com)
