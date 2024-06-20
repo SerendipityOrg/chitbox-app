@@ -48,12 +48,9 @@ ChitBox prioritizes the security and privacy of user data through the following 
 - **Regular Audits:** Conducting periodic security audits and compliance checks.
 - **User Consent:** Ensuring user consent for data collection and usage in compliance with privacy regulations.
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+
 
 
 ## Screenshots
 
-![SplashScreen](https:/www.google.com)
+![SplashScreen]([https:/www.google.com)](https://github.com/SerendipityOrg/chitbox-app/blob/main/Screenshots/Screen1/Splash_Screen/Splash_Screen_app.jpg?raw=true)
