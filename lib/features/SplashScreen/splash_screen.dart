@@ -1,4 +1,4 @@
-import 'package:chitbox_app/main.dart';
+import 'package:chitbox_app/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => const MyApp(),
+        builder: (context) => OnboardingScreen(),
       ));
     });
   }
