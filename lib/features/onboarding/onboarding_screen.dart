@@ -1,3 +1,4 @@
+import 'package:chitbox_app/features/Create_Account/CreateAccount.dart';
 import 'package:chitbox_app/features/onboarding/onboarding_contents.dart';
 import 'package:chitbox_app/features/onboarding/size_config.dart';
 import 'package:flutter/material.dart';
@@ -116,7 +117,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ? Padding(
                           padding: const EdgeInsets.all(30),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CreateAccount()),
+                              );
+                            },
                             child: const Text("START"),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,
@@ -140,7 +147,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  _controller.jumpToPage(2);
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => CreateAccount()),
+                                  );
                                 },
                                 child: const Text(
                                   "SKIP",
