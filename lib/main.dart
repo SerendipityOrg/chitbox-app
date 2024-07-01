@@ -1,4 +1,3 @@
-import 'package:chitbox_app/features/Create_Account/CreateAccount.dart';
 import 'package:chitbox_app/features/SplashScreen/splash_screen.dart';
 //import 'package:chitbox_app/features/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';

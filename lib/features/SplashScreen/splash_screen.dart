@@ -25,22 +25,15 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Align(
-            alignment: Alignment.bottomCenter,
+          Spacer(), // Pushes everything to the bottom except the logo
+          Center(
             child: Image.asset(
               "assets/logos/Screen_1_Splash_Screen/chitbox_logo.png",
-              height: 550,
+              height: 250, // Adjusted to fit within typical screen size
             ),
           ),
-
-          // Spacer(), // Spacer to push everything to the center
-          // Center(
-          //   child: Image.asset(
-          //     'assets/logos/Screen_1_Splash_Screen/chitbox_logo.png',
-          //   ),
-          // ),
+          Spacer(), // Pushes everything to the top except the logo
           const SizedBox(height: 20),
-          Spacer(),
           Center(
             child: Image.asset(
               'assets/logos/Screen_1_Splash_Screen/govt_karnataka.png',

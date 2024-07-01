@@ -1,3 +1,4 @@
+import 'package:chitbox_app/features/Create_Account/PersonalDetails_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
@@ -139,7 +140,13 @@ class _InvitationScreenState extends State<InvitationScreen> {
                           EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                     ),
                     onPressed: () {
-                      // Handle Continue button press
+                      // Navigate to PersonalDetailsScreen
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PersonalDetailsScreen(),
+                        ),
+                      );
                     },
                     child: Text(
                       'Continue',
