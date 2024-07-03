@@ -109,7 +109,7 @@ class _InvitationScreenState extends State<InvitationScreen> {
                               _codeController3, _focusNode3, _focusNode4),
                           SizedBox(width: 10),
                           _buildCodeBox(
-                              _codeController4, _focusNode3, _focusNode4),
+                              _codeController4, _focusNode4, FocusNode()),
                         ],
                       ),
                       SizedBox(height: 10),
