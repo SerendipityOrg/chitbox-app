@@ -1,7 +1,6 @@
 // Imprt Required Packages
 
 import 'package:chitbox_app/features/auth/view/pages/login_page.dart';
-import 'package:chitbox_app/features/auth/view/pages/otp_screen.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
