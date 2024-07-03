@@ -1,7 +1,6 @@
-import 'package:chitbox_app/features/Create_Account/AccountCreatedScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:chitbox_app/routes/app_routes.dart';
 import 'package:flutter/services.dart';
- // Update the import path
 
 class eKYCVerificationScreen extends StatefulWidget {
   @override
@@ -149,26 +148,22 @@ class _eKYCVerificationScreenState extends State<eKYCVerificationScreen> {
                   child: Text(
                     'Verify & continue',
                     style: TextStyle(
-                      fontFamily: 'Roboto', // Change this to your desired font family
+                      fontFamily: 'Roboto',
                       fontSize: 18,
-                      color: Colors.white, // Change the text color to white
+                      color: Colors.white,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.purple,
                     padding: EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30), // Oval corners
+                      borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   onPressed: isPanValid && isAadhaarValid
                       ? () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => AccountCreatedScreen()),
-                          );
-                        }
+                    Navigator.pushNamed(context, AppRoutes.accountCreated);
+                  }
                       : null,
                 ),
               ),

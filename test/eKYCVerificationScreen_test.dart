@@ -1,4 +1,4 @@
-import 'package:chitbox_app/features/Create_Account/eKYCVerificationScreen.dart';
+import 'package:chitbox_app/features/Create_Account/view/pages/eKYCVerificationScreen.dart';
 import 'package:chitbox_app/features/home/DashboardScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

@@ -1,7 +1,8 @@
-import 'package:chitbox_app/features/Create_Account/eKYCVerificationScreen.dart';
+import 'package:chitbox_app/features/Create_Account/view/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:chitbox_app/routes/app_routes.dart';
 
 class PersonalDetailsScreen extends StatefulWidget {
   @override
@@ -126,15 +127,38 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
               style: TextStyle(color: Colors.grey),
             ),
             const SizedBox(height: 24),
-            _buildTextFormField(nameController, 'Name as per Aadhar card', Icons.person),
-             const SizedBox(height: 24),
-            _buildTextFormField(dobController, 'DOB', Icons.calendar_today, readOnly: true, onTap: () => _selectDate(context)),
-             const SizedBox(height: 24),
-            _buildTextFormField(emailController, 'Email ID', Icons.email),
-             const SizedBox(height: 24),
-            _buildTextFormField(otpController, 'Enter OTP', Icons.lock),
-             const SizedBox(height: 24),
-            _buildTextFormField(addressController, 'Address for communication', Icons.location_city, maxLines: 3),
+            CustomTextFormField(
+              controller: nameController,
+              label: 'Name as per Aadhar card',
+              icon: Icons.person,
+            ),
+            const SizedBox(height: 24),
+            CustomTextFormField(
+              controller: dobController,
+              label: 'DOB',
+              icon: Icons.calendar_today,
+              readOnly: true,
+              onTap: () => _selectDate(context),
+            ),
+            const SizedBox(height: 24),
+            CustomTextFormField(
+              controller: emailController,
+              label: 'Email ID',
+              icon: Icons.email,
+            ),
+            const SizedBox(height: 24),
+            CustomTextFormField(
+              controller: otpController,
+              label: 'Enter OTP',
+              icon: Icons.lock,
+            ),
+            const SizedBox(height: 24),
+            CustomTextFormField(
+              controller: addressController,
+              label: 'Address for communication',
+              icon: Icons.location_city,
+              maxLines: 3,
+            ),
             const SizedBox(height: 24),
             Align(
               alignment: Alignment.center,
@@ -151,7 +175,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                 ),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => eKYCVerificationScreen()));
+                    Navigator.pushNamed(context, AppRoutes.ekycVerification);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.transparent,
@@ -174,24 +198,6 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildTextFormField(TextEditingController controller, String label, IconData icon, {int maxLines = 1, bool readOnly = false, VoidCallback? onTap}) {
-    return TextFormField(
-      controller: controller,
-      decoration: InputDecoration(
-        labelText: label,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15),
-        ),
-        suffixIcon: Icon(icon),
-        contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 12),
-      ),
-      readOnly: readOnly,
-      onTap: onTap,
-      maxLines: maxLines,
-      style: TextStyle(fontSize: 16, height: 1.5),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:chitbox_app/routes/app_routes.dart';
 import 'package:country_code_picker/country_code_picker.dart';
-import 'otp_screen.dart'; // Import the OTP screen
 
 class LoginPage extends StatefulWidget {
   @override
@@ -33,11 +33,10 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void _navigateToOTPScreen() {
-    Navigator.push(
+    Navigator.pushNamed(
       context,
-      MaterialPageRoute(
-        builder: (context) => OTPScreen(phoneNumber: '$countryCode ${phoneController.text}'),
-      ),
+      AppRoutes.otp,
+      arguments: '$countryCode ${phoneController.text}',
     );
   }
 

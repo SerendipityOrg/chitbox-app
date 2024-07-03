@@ -1,4 +1,4 @@
-import 'package:chitbox_app/features/Create_Account/PersonalDetails_Screen.dart';
+import 'package:chitbox_app/features/Create_Account/view/pages/PersonalDetails_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,4 +1,4 @@
-import 'package:chitbox_app/features/Create_Account/CreateAccount.dart';
+import 'package:chitbox_app/features/Create_Account/view/pages/CreateAccount.dart';
 import 'package:chitbox_app/features/onboarding/onboarding_contents.dart';
 import 'package:chitbox_app/features/onboarding/size_config.dart';
 import 'package:flutter/material.dart';
