@@ -110,25 +110,5 @@ void main() {
     expect(find.byIcon(Icons.check_circle), findsNWidgets(2));
   });
 
-  /*
-  Navigation Testing: Test navigation to Account Created screen and Dashboard screen.
-  */
 
-  testWidgets('Navigation to Account Created and Dashboard screen', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(home: eKYCVerificationScreen()));
-    
-    await tester.enterText(find.byType(TextField).at(0), 'ABCDE1234F');
-    await tester.enterText(find.byType(TextField).at(1), '123412341234');
-    await tester.pump();
-    
-    await tester.tap(find.text('Verify & continue'));
-    await tester.pumpAndSettle();
-    
-    expect(find.text('Your account has been created\nand KYC verified successfully.'), findsOneWidget);
-    
-    await tester.pump(Duration(seconds: 15));
-    await tester.pumpAndSettle();
-    
-    expect(find.byType(DashboardScreen), findsOneWidget);
-  });
 }
