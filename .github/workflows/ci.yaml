@@ -4,7 +4,6 @@ on:
       - chitboxdev
   push:
     branches:
-      - main
       - chitboxdev
       - develop
 name: "Build & Release"
