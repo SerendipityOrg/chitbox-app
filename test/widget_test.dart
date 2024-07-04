@@ -1,14 +1,29 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
+import 'package:chitbox_app/features/Create_Account/view/pages/eKYCVerificationScreen.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:chitbox_app/main.dart';
+import 'auth/login_page_test.dart' as login_page_test;
+import 'create_account/account_created_screen_test.dart' as account_created_screen_test;
+import 'create_account/personal_details_screen_test.dart' as personal_details_screen_test;
+import 'widgets/custom_button_test.dart' as custom_button_test;
+import 'widgets/title_widget_test.dart' as title_widget_test;
+import 'widgets/description_widget_test.dart' as description_widget_test;
 
 void main() {
- print("hrllo");
+  group('Auth Tests', () {
+    login_page_test.main();
+  });
+
+  group('Create Account Tests', () {
+    account_created_screen_test.main();
+    personal_details_screen_test.main();
+      
+  });
+
+  group('Widget Tests', () {
+    custom_button_test.main();
+    title_widget_test.main();
+    description_widget_test.main();
+  });
+
+  
 }
