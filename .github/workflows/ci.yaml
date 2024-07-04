@@ -2,9 +2,11 @@ on:
   pull_request:
     branches:
       - main
+      - chitboxdev
   push:
     branches:
       - main
+      - chitboxdev
       - develop
 name: "Build & Release"
 jobs:
