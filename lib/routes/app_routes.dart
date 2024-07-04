@@ -23,6 +23,11 @@ class AppRoutes {
   static const String onboarding = '/onboarding';
   static const String otp = '/otp'; // Add the OTP route
 
+  static const String newChits = '/newChits';
+  static const String myChits = '/myChits';
+  static const String auction = '/auction';
+  static const String profile = '/profile';
+
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case splash:
@@ -55,6 +60,3 @@ class AppRoutes {
     }
   }
 }
-
-
-

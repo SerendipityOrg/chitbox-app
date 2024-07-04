@@ -17,6 +17,7 @@ class _AccountCreatedScreenState extends State<AccountCreatedScreen> {
     super.initState();
     Timer(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacementNamed(AppRoutes.dashboard);
+    
     });
   }
 
