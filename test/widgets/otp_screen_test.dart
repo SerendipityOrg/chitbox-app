@@ -1,15 +1,11 @@
 import 'package:chitbox_app/features/auth/view/pages/otp_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
- // Ensure the path is correct for your project
+import 'package:flutter_test/flutter_test.dart'; // Ensure the path is correct for your project
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 void main() {
   // Group all test cases related to the OTP Verification Screen
   group('OTP Verification Screen Tests', () {
-    // Test the visibility of the OTP Verification title
-
-
     // Test the visibility of the instruction text
     testWidgets('Test the visibility of the instruction text', (WidgetTester tester) async {
       await _testInstructionTextVisibility(tester);
@@ -20,12 +16,12 @@ void main() {
       await _testOTPInputFields(tester);
     });
 
-
-
+    // Test the visibility and functionality of the Continue button
+    testWidgets('Test the visibility and functionality of the Continue button', (WidgetTester tester) async {
+      await _testContinueButtonFunctionality(tester);
+    });
   });
 }
-
-
 
 // Function to test the visibility of the instruction text
 Future<void> _testInstructionTextVisibility(WidgetTester tester) async {
@@ -77,6 +73,6 @@ Future<void> _testContinueButtonFunctionality(WidgetTester tester) async {
   // Assert: Verify that tapping the Continue button triggers the OTP verification logic
   // (Assuming there is some verification logic to check here)
   // For example, you can check if a certain function is called or a certain state is reached.
+  // Since we don't have the actual verification logic here, we'll assume it redirects to another screen.
+  expect(find.text('Next Screen'), findsOneWidget);
 }
-
-
