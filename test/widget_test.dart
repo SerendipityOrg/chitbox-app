@@ -11,6 +11,7 @@ import 'widgets/description_widget_test.dart' as description_widget_test;
 void main() {
   group('Auth Tests', () {
     login_page_test.main();
+    print('testing ci');
   });
 
   group('Create Account Tests', () {
