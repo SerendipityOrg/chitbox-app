@@ -10,6 +10,7 @@ class AppStrings {
   static const String personalDetails = 'Personal Details';
   static const String datePicker = 'Date Picker';
   static const String done = 'Done';
+  static const String DOB = 'DOB';
 
   // CreateAccount Strings
   static const String chitboxTitle = 'CHITBOX';

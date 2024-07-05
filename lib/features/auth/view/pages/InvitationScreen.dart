@@ -132,7 +132,7 @@ class _InvitationScreenState extends State<InvitationScreen> {
                     text: AppStrings.continueText,
                     onPressed: () {
                       Navigator.pushNamed(context, AppRoutes.personalDetails);
-                    },
+                    }, backgroundColor:Colors.purple,
                   ),
                 ),
               ),

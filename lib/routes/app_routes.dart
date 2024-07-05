@@ -5,11 +5,11 @@ import 'package:chitbox_app/features/home/DashboardScreen.dart';
 import 'package:chitbox_app/features/onboarding/onboarding_screen.dart';
 import 'package:chitbox_app/features/auth/view/pages/otp_screen.dart';
 
-import '../features/Create_Account/view/pages/AccountCreatedScreen.dart';
-import '../features/Create_Account/view/pages/CreateAccount.dart';
-import '../features/Create_Account/view/pages/InvitationScreen.dart';
-import '../features/Create_Account/view/pages/PersonalDetails_Screen.dart';
-import '../features/Create_Account/view/pages/eKYCVerificationScreen.dart'; // Import the OTP screen
+import '../features/auth/view/pages/AccountCreatedScreen.dart';
+import '../features/auth/view/pages/CreateAccount.dart';
+import '../features/auth/view/pages/InvitationScreen.dart';
+import '../features/auth/view/pages/PersonalDetails_Screen.dart';
+import '../features/auth/view/pages/eKYCVerificationScreen.dart';
 
 class AppRoutes {
   static const String splash = '/';
@@ -31,7 +31,7 @@ class AppRoutes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case splash:
-        return MaterialPageRoute(builder: (_) => SplashScreen());
+        return MaterialPageRoute(builder: (_) => const SplashScreen());
       case login:
         return MaterialPageRoute(builder: (_) => LoginPage());
       case personalDetails:
@@ -39,15 +39,15 @@ class AppRoutes {
       case ekycVerification:
         return MaterialPageRoute(builder: (_) => eKYCVerificationScreen());
       case accountCreated:
-        return MaterialPageRoute(builder: (_) => AccountCreatedScreen());
+        return MaterialPageRoute(builder: (_) => const AccountCreatedScreen());
       case dashboard:
         return MaterialPageRoute(builder: (_) => DashboardScreen());
       case createAccount:
-        return MaterialPageRoute(builder: (_) => CreateAccount());
+        return MaterialPageRoute(builder: (_) => const CreateAccount());
       case invitation:
-        return MaterialPageRoute(builder: (_) => InvitationScreen());
+        return MaterialPageRoute(builder: (_) => const InvitationScreen());
       case onboarding:
-        return MaterialPageRoute(builder: (_) => OnboardingScreen());
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case otp:
         var phoneNumber = settings.arguments as String;
         return MaterialPageRoute(builder: (_) => OTPScreen(phoneNumber: phoneNumber));

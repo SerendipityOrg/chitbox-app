@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:chitbox_app/routes/app_routes.dart';
 import 'package:chitbox_app/utils/strings.dart';
+import 'package:chitbox_app/utils/logger_util.dart'; // Import LoggerUtil
 
 import '../widgets/custom_button.dart';
 import '../widgets/description_widget.dart';
@@ -20,6 +21,7 @@ class CreateAccount extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
+            LoggerUtil.log('Back button pressed on Create Account screen');
             Navigator.pop(context);
           },
         ),
@@ -62,6 +64,7 @@ class CreateAccount extends StatelessWidget {
                       CustomButton(
                         text: AppStrings.createAccount,
                         onPressed: () {
+                          LoggerUtil.log('Create Account button pressed');
                           Navigator.pushNamed(context, AppRoutes.invitation);
                         },
                       ),
@@ -77,6 +80,7 @@ class CreateAccount extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
+                                  LoggerUtil.log('Log In text pressed');
                                   Navigator.pushNamed(context, AppRoutes.login);
                                 },
                             ),

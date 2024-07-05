@@ -1,4 +1,4 @@
-import 'package:chitbox_app/features/Create_Account/view/widgets/description_widget.dart';
+import 'package:chitbox_app/features/auth/view/widgets/DescriptionWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 void main() {

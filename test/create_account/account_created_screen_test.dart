@@ -1,7 +1,7 @@
+import 'package:chitbox_app/features/auth/view/pages/AccountCreatedScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:chitbox_app/features/home/DashboardScreen.dart';
-import 'package:chitbox_app/features/Create_Account/view/pages/AccountCreatedScreen.dart';
 
 void main() {
   group('AccountCreatedScreen Tests', () {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:chitbox_app/routes/app_routes.dart';
 import 'package:country_code_picker/country_code_picker.dart';
+import 'package:chitbox_app/utils/logger_util.dart'; // Import LoggerUtil
 
 class LoginPage extends StatefulWidget {
   @override
@@ -33,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void _navigateToOTPScreen() {
+    LoggerUtil.log('Navigate to OTP Screen with phone number: $countryCode ${phoneController.text}');
     Navigator.pushNamed(
       context,
       AppRoutes.otp,
@@ -47,7 +49,9 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () {},
+          onPressed: () {
+            LoggerUtil.log('Back button pressed on Login screen');
+          },
         ),
         elevation: 0,
       ),
@@ -81,6 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                         countryCode = code.dialCode ?? '+91';
                         _onPhoneChanged();
                       });
+                      LoggerUtil.log('Country code changed to: $countryCode');
                     },
                     initialSelection: 'IN',
                     favorite: ['+91', 'IN'],

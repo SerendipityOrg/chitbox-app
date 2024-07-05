@@ -1,10 +1,11 @@
-import 'package:chitbox_app/features/Create_Account/view/pages/CreateAccount.dart';
 import 'package:chitbox_app/features/onboarding/onboarding_contents.dart';
 import 'package:chitbox_app/features/onboarding/size_config.dart';
 import 'package:flutter/material.dart';
 
+import '../auth/view/pages/CreateAccount.dart';
+
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({super.key});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -121,10 +122,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CreateAccount()),
+                                    builder: (context) => const CreateAccount()),
                               );
                             },
-                            child: const Text("START"),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,
                               shape: RoundedRectangleBorder(
@@ -138,6 +138,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               textStyle:
                                   TextStyle(fontSize: (width <= 550) ? 13 : 17),
                             ),
+                            child: const Text("START"),
                           ),
                         )
                       : Padding(
@@ -150,19 +151,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => CreateAccount()),
+                                        builder: (context) => const CreateAccount()),
                                   );
                                 },
-                                child: const Text(
-                                  "SKIP",
-                                  style: TextStyle(color: Colors.black),
-                                ),
                                 style: TextButton.styleFrom(
                                   elevation: 0,
                                   textStyle: TextStyle(
                                     fontWeight: FontWeight.w600,
                                     fontSize: (width <= 550) ? 13 : 17,
                                   ),
+                                ),
+                                child: const Text(
+                                  "SKIP",
+                                  style: TextStyle(color: Colors.black),
                                 ),
                               ),
                               ElevatedButton(
@@ -172,7 +173,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                     curve: Curves.easeIn,
                                   );
                                 },
-                                child: const Text("NEXT"),
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: Colors.black,
                                   shape: RoundedRectangleBorder(
@@ -187,6 +187,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   textStyle: TextStyle(
                                       fontSize: (width <= 550) ? 13 : 17),
                                 ),
+                                child: const Text("NEXT"),
                               ),
                             ],
                           ),
